@@ -74,9 +74,8 @@ export default [
             'react/react-in-jsx-scope': 'off', // No need for React import in modern JSX
             'react/prop-types': 'off', // PropTypes are not necessary with TypeScript
 
-            '@typescript-eslint/explicit-function-return-type': 'error', // Block TypeScript to infer return types
-
             "quotes": ["warn", "double"], // Use double quotes
+            "semi": ["warn", "always"], // Always use semicolons
 
             '@typescript-eslint/no-unused-vars': [
                 'warn',
@@ -85,7 +84,7 @@ export default [
                     varsIgnorePattern: '^_', // Ignore variables starting with underscore
                 },
             ], // Warn for unused variables
-
+            '@typescript-eslint/explicit-function-return-type': 'error', // Block TypeScript to infer return types
             '@typescript-eslint/no-explicit-any': 'warn', // Block the use of `any`
             '@typescript-eslint/no-non-null-assertion': 'warn', // Warn for non-null assertions
             '@typescript-eslint/consistent-type-imports': 'warn', // Consistent type imports
