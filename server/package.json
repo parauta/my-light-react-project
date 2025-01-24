@@ -1,0 +1,22 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node dist/index.js",
+        "build": "tsc",
+        "dev": "nodemon src/index.ts"
+    },
+    "type": "commonjs",
+    "dependencies": {
+        "apollo-server": "^3.13.0",
+        "dotenv-flow": "^4.1.0",
+        "graphql": "^16.10.0",
+        "node-fetch": "^3.3.2",
+        "nodemon": "^3.1.9"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.10",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.3"
+    }
+}
