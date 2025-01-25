@@ -1,12 +1,12 @@
 import { fixupConfigRules, fixupPluginRules } from '@eslint/compat';
-import react from 'eslint-plugin-react';
+import { FlatCompat } from '@eslint/eslintrc';
+import js from '@eslint/js';
 import typescriptEslint from '@typescript-eslint/eslint-plugin';
-import globals from 'globals';
 import tsParser from '@typescript-eslint/parser';
+import react from 'eslint-plugin-react';
+import globals from 'globals';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import js from '@eslint/js';
-import { FlatCompat } from '@eslint/eslintrc';
 
 // Calculate current filename and directory
 const __filename = fileURLToPath(import.meta.url);
@@ -76,6 +76,8 @@ export default [
 
             "quotes": ["warn", "double"], // Use double quotes
             "semi": ["warn", "always"], // Always use semicolons
+            "prefer-const": "error", // Prefer `const` over `let`
+            "no-multiple-empty-lines": ["warn", { "max": 1 }], // Allow only one empty line
 
             '@typescript-eslint/no-unused-vars': [
                 'warn',

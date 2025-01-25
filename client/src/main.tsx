@@ -12,5 +12,5 @@ if (rootElement) {
     );
 }
 else {
-    console.error("Elemento com id \"root\" não encontrado no DOM.");
+    console.error("Element with id \"root\" not found in DOM.");
 }
